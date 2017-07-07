@@ -1,0 +1,27 @@
+{
+  "name": "choo-talking-animals",
+  "version": "0.0.0",
+  "description": "another cute choo tutorial - how to use input fields",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js:bundle.js -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "budo": "^9.4.7",
+    "bundle-collapser": "^1.2.1",
+    "choo": "^5.1.4",
+    "uglifyify": "^3.0.4",
+    "unassertify": "^2.0.4",
+    "yo-yoify": "^3.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louiscenter/choo-talking-animals.git"
+  },
+  "author": "Louis Center (@louiscenter)",
+  "bugs": {
+    "url": "https://github.com/louiscenter/choo-talking-animals/issues"
+  },
+  "homepage": "https://github.com/louiscenter/choo-talking-animals"
+}

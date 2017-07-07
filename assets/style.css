@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #FFBFCA;
+  color: #333333;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 18px;
+}
+
+a {
+  color: #FF8398;
+  text-decoration: none;
+}
+
+a:hover { color: #8082FE }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  color: #333;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+  height: 28px;
+  margin: 0 0 0 6px;
+  padding: 2px 8px 0 8px;
+  outline: none;
+}
+
+button:hover {
+  background: #ff8398;
+}
+
+button:active {
+  color: #fff;
+}
+
+.grass {
+  background-image: url(/assets/bg.gif);
+  width: 525px;
+  height: 200px;
+  margin: 0 0 1.5rem 0;
+  position: relative;
+}
+
+.grass img { position: absolute; }
+
+.bubble {
+  background: #fff;
+  border: 3px solid #222;
+  height: 19px;
+  min-width: 40px;
+  padding: 0.35rem 0.5rem 0.15rem 0.5rem;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  z-index: 999;
+}
+
+.bubble:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 2px;
+  right: auto;
+  top: auto;
+  bottom: -15px;
+  border: 6px solid;
+  border-color: #222 transparent transparent #222;
+}
+
+.bubble:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 5px;
+  right: auto;
+  top: auto;
+  bottom: -8px;
+  border: 4px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+.lion {
+  position: relative;
+  top: 80px;
+  left: 40px;
+}
+
+.crocodile {
+  position: relative;
+  top: 80px;
+  left: 250px;
+}
+
+.inputs {
+  margin: 0 0 2.5rem 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0.5rem 0;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+}
+
+input {
+  background: #ffbfca;
+  border: 2px solid #333;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+  height: 28px;
+  outline: none;
+  padding: 2px 0 0 8px;
+}
+
+input#lion {
+  width: 276px;
+}
+
+input#crocodile {
+  width: 205px;
+}
