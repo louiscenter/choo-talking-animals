@@ -3,6 +3,8 @@
 
 ✨ This was built for the [choo handbook](https://handbook.choo.io) ✨
 
+![screenshot of choo-talking-animals](assets/screenshot.gif "screenshot of choo-talking-animals")
+
 Try the finished app: [https://choo-talking-animals.glitch.me](https://choo-talking-animals.glitch.me/)
 
 If you'd like to learn how to build this app from scratch using `choo`, visit the guide: [https://handbook.choo.io/using-input-fields](https://handbook.choo.io/using-input-fields).
