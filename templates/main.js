@@ -1,7 +1,7 @@
 // import html helper
 var html = require('choo/html')
 
-// export function
+// export template function
 module.exports = function (state, emit) {
   var lion = state.animals.lion
   var crocodile = state.animals.crocodile
@@ -40,6 +40,7 @@ module.exports = function (state, emit) {
     </div>
   `
 
+  // update what lion says
   function updateLion (e) {
     emit('updateAnimal', {
       type: 'lion',
@@ -47,6 +48,7 @@ module.exports = function (state, emit) {
     })
   }
 
+  // update what crocodile says
   function updateCrocodile () {
     emit('updateAnimal', {
       type: 'crocodile',
